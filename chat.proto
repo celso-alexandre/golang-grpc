@@ -1,11 +1,11 @@
 syntax = "proto3";
 package chat;
+option go_package = "./protobuf/chat";
 
 message Message {
    string body = 1;
 }
 
-message ChatService {
-   rpc SendMessage(Message) returns (Message);
-   rpc ReceiveMessage(Message) returns (Message);
+service ChatService {
+   rpc SayHello(Message) returns (Message) {}
 }
