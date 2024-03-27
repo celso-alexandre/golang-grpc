@@ -1,8 +1,11 @@
-module github.com/celso-alexandre/golang-grpc
+module github.com/celso-alexandre/golang-grpc/client
 
 go 1.22.1
 
-require google.golang.org/grpc v1.62.1
+require (
+	github.com/celso-alexandre/golang-grpc v0.0.0-20240327151743-5f4e6a93997b
+	google.golang.org/grpc v1.62.1
+)
 
 require (
 	github.com/golang/protobuf v1.5.4 // indirect
