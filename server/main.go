@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/celso-alexandre/golang-grpc/protobuf/chat"
+	"github.com/celso-alexandre/golang-grpc/server/protobuf/chat"
 	"google.golang.org/grpc"
 )
 

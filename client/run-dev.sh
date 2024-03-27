@@ -1,4 +1,8 @@
 #!/bin/bash
+scriptdir="$(dirname "$(readlink -f "$0")")"
+echo "scriptdir: $scriptdir"
+cd $scriptdir
+
 go install github.com/cosmtrek/air@latest
 
 # export GIN_MODE=release
